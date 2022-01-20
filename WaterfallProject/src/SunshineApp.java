@@ -277,7 +277,7 @@ public class SunshineApp {
   private void generateMediaFile() {
     try {
       File file;
-      SimpleDateFormat sdf = new SimpleDateFormat("ddMMyy-hhmmss.SSS");
+      SimpleDateFormat sdf = new SimpleDateFormat("ddMMyy-hhmmss.SSS", Locale.ENGLISH);
       String date = sdf.format(new Date());
       if (isIR) {
         file = new File("IrMedia" + date + ".txt");

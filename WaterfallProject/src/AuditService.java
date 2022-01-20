@@ -23,7 +23,7 @@ public class AuditService {
      */
     public static void createAndOpenFile() {
       try {
-        SimpleDateFormat sdf = new SimpleDateFormat("ddMMyy-hhmmss.SSS", Locale.ENGLISH);
+        SimpleDateFormat sdf = new SimpleDateFormat("ddMMyy-hhmmss.SSS");
         String date = sdf.format(new Date());
         File file = new File("Audit" + date + ".txt");
         fr = new FileWriter(file, false);
